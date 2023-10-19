@@ -13,13 +13,8 @@ with open('./setup.json') as fin:
 driver = webdriver.Chrome()
 driver.get("https://www.codewars.com/users/sign_in")
 
-usernameElem = driver.find_element_by_id("user_email")
-passwordElem = driver.find_element_by_id("user_password")
-
-usernameElem.send_keys(setup['codewars']['email'])
-passwordElem.send_keys(setup['codewars']['password'])
-
-driver.find_element_by_xpath("//button[2]").click()
+driver.find_element_by_xpath("//button[1]").click()
+input("press enter when logged in")
 driver.find_element_by_xpath("//div[@class='profile-pic mr-0']/img[1]").click()
 
 user_name = driver.current_url.split("/")[-1]
@@ -41,7 +36,7 @@ driver.find_element_by_link_text('Solutions').click()
 calculated_max_refreshes = completed_katas // 15 + 3
 if calculated_max_refreshes < setup['reloads_in_browser']:
     nReloads = calculated_max_refreshes
-else: 
+else:
     nReloads = setup['reloads_in_browser']
 
 elem = driver.find_element_by_tag_name("body")

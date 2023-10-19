@@ -1,7 +1,7 @@
 .main.py
 .setup.json
 .source.html
-setup.json
 source.html
 solutions/
-main.py
+.DS_Store
+__pycache__
