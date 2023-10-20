@@ -2,6 +2,7 @@
 .setup.json
 .source.html
 source.html
+cookies.json
 solutions/
 .DS_Store
 __pycache__
