@@ -1,8 +1,6 @@
 # Codewars Kata Exporter
+Exports your solved Codewars katas to a nice directory structure.
 
-creator https://github.com/lucasbflopes/codewars-kata-exporter
-
-___
 ## General Information
 
 This script, although too much 'hacky' for my taste, was the best solution I came up with to export all my kata solutions from codewars to a file structure in my hard drive in an automated fashion.
