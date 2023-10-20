@@ -1,9 +1,4 @@
 {
-    "codewars": {
-      "email": "",
-      "password": "",
-      "api_key": ""
-    },
     "download_folder": "./solutions",
     "file_extensions": {
       "java": ".java",
